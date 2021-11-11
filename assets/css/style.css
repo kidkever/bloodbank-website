@@ -568,6 +568,7 @@ header .owl-theme .owl-dots .owl-dot.active span {
 
 #contact-us .bg-blur {
   z-index: 2;
+  box-shadow: 0 0 20px -5px #aaa;
 }
 
 #contact-us .col-lg-6 {

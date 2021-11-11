@@ -551,7 +551,7 @@ header .owl-theme .owl-dots .owl-dot.active span {
 #contact-us .fill:before {
   content: "";
   position: absolute;
-  background: var(--main-color);
+  background: #189a0e;
 }
 
 #contact-us img {

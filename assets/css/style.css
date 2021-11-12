@@ -11,7 +11,8 @@ body {
   font-weight: 400;
 }
 
-section {
+section,
+footer {
   padding: 65px 0;
 }
 
@@ -593,3 +594,108 @@ header .owl-theme .owl-dots .owl-dot.active span {
   }
 }
 /* end contact-us section */
+
+/* app section */
+#app {
+  background-image: url(../imgs/BG-phone.png);
+}
+/* end app section */
+
+/* footer section */
+footer {
+  background-color: #1a1f25;
+  color: #eee;
+}
+
+footer h3 {
+  font-size: 22px;
+  color: #fff;
+}
+
+footer p {
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+footer .nav li a {
+  color: #eee;
+  display: inline-block;
+}
+
+footer .nav li a:hover {
+  color: var(--secondary-color);
+}
+
+footer .li-custom {
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 20px;
+}
+/* end footer section */
+
+/* footer nav */
+#footer-nav {
+  background-color: #14171c;
+}
+
+#footer-nav .nav-link {
+  font-size: 18px;
+  padding: 0.5rem 0.6rem;
+  color: #eee;
+}
+
+#footer-nav .nav-link:hover {
+  color: var(--secondary-color);
+}
+
+#footer-nav .copy {
+  color: #eee;
+  font-size: 16px;
+}
+
+#footer-nav .copy span {
+  color: var(--secondary-color);
+}
+/* end footer nav */
+
+/* register page */
+#register {
+  background-color: #fbfbfb;
+}
+
+#register .breadcrumb a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+#register .breadcrumb .active a {
+  color: var(--main-color);
+}
+
+#register .card-body {
+  padding: 2rem 4rem;
+}
+
+#register .card-body input,
+#register .card-body select {
+  padding: 15px;
+  background-color: #fbfbfb;
+  border: 2px solid #f7f2f2;
+  font-weight: bold;
+  direction: rtl;
+  font-size: 18px;
+}
+
+#register .btn-main {
+  background-color: #3ab54a;
+  font-size: 22px;
+  color: #fff;
+}
+
+#register .fill:before {
+  content: "";
+  position: absolute;
+  background: #189a0e;
+}
+
+/* end register page */

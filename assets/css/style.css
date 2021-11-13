@@ -20,6 +20,46 @@ img {
   max-width: 100%;
 }
 
+.card-bg {
+  background-color: var(--main-color);
+}
+
+.heart-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: var(--main-color);
+  width: 40px;
+  height: 40px;
+  transition: all 0.1s ease-in;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.heart-icon i {
+  width: 40px;
+  font-size: 20px;
+  color: #eee;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heart-icon:hover i {
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+}
+
+.breadcrumb a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.breadcrumb .active a {
+  color: var(--main-color);
+}
+
 h1 {
   font-size: 2.25rem;
   color: var(--secondary-color);
@@ -78,7 +118,7 @@ p {
 .fill:before {
   content: "";
   position: absolute;
-  background: var(--secondary-color);
+  background: var(--main-color-hover);
   bottom: 0;
   left: 0;
   right: 0;
@@ -659,25 +699,21 @@ footer .li-custom {
 /* end footer nav */
 
 /* register page */
-#register {
+#register,
+#login {
   background-color: #fbfbfb;
 }
 
-#register .breadcrumb a {
-  color: #aaa;
-  text-decoration: none;
-}
-
-#register .breadcrumb .active a {
-  color: var(--main-color);
-}
-
-#register .card-body {
+#register .card-body,
+#login .card-body {
   padding: 2rem 4rem;
 }
 
 #register .card-body input,
-#register .card-body select {
+#register .card-body select,
+#contact-us-page .card-body input,
+#contact-us-page .card-body textarea,
+#login .card-body input:not([type="checkbox"]) {
   padding: 15px;
   background-color: #fbfbfb;
   border: 2px solid #f7f2f2;
@@ -699,3 +735,64 @@ footer .li-custom {
 }
 
 /* end register page */
+
+/* login page */
+#login .btn-green .btn-main {
+  background-color: #3ab54a;
+}
+
+#login .btn-green .fill:before {
+  content: "";
+  position: absolute;
+  background: #189a0e;
+}
+/* end login page */
+
+/* article-single page */
+#article-single {
+  background-color: #fbfbfb;
+}
+
+#article-single .card p {
+  font-size: 1.2rem;
+}
+
+#article-single .heart-icon {
+  border: 1px solid #fff;
+  width: auto;
+  height: auto;
+  top: 9px;
+  left: 9px;
+}
+/* end article-single page */
+
+/* contact-us-page */
+#contact-us-page .padding-custom {
+  padding-bottom: 2.2rem !important;
+}
+/* end contact-us-page */
+
+/* donation-details page */
+#donation-details {
+  background-color: #fbfbfb;
+}
+
+#donation-details span {
+  width: 49%;
+  display: inline-block;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+}
+
+#donation-details span:first-child {
+  background: #f4f4f4;
+}
+
+#donation-details span:last-child {
+  background: #fbfbfb;
+}
+
+#donation-details .card p {
+  font-size: 1.1rem;
+}
+/* end donation-details page */

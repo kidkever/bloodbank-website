@@ -784,6 +784,14 @@ footer .li-custom {
   margin-bottom: 15px;
 }
 
+#donation-details .span-width-25 {
+  width: 24%;
+}
+
+#donation-details .span-width-75 {
+  width: 74%;
+}
+
 #donation-details span:first-child {
   background: #f4f4f4;
 }
@@ -794,5 +802,18 @@ footer .li-custom {
 
 #donation-details .card p {
   font-size: 1.1rem;
+}
+
+@media screen and (min-width: 992px) {
+  #donation-details .span-width-75 {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 501px) {
+  #donation-details .span-width-25,
+  #donation-details .span-width-75 {
+    width: 98%;
+  }
 }
 /* end donation-details page */
